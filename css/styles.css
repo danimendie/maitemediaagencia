@@ -2471,3 +2471,567 @@ h1, h2, h3, h4, h5, h6 {
         right: 1.5rem;
     }
 }
+
+/* ========================================
+   MOBILE OPTIMIZATION (max-width: 768px)
+   Priority: legibility, breathing room, hierarchy
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Sections - reduce vertical padding for mobile */
+    .credibility,
+    .services,
+    .solve,
+    .projects,
+    .process,
+    .differentials,
+    .clients,
+    .testimonials,
+    .faq,
+    .cta-final {
+        padding: 4rem 0;
+    }
+    
+    /* Section headers - tighter spacing */
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+    
+    .section-subtitle {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+    }
+    
+    /* HERO - Mobile Optimization */
+    .hero {
+        padding: calc(64px + 1.5rem) 0 3rem;
+    }
+    
+    .hero__eyebrow {
+        font-size: 0.625rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .hero__title {
+        font-size: clamp(1.75rem, 7vw, 2.25rem);
+        margin-bottom: 1rem;
+    }
+    
+    .hero__subtitle {
+        font-size: 0.9375rem;
+        line-height: 1.65;
+        margin-bottom: 1.75rem;
+        max-width: 100%;
+    }
+    
+    .hero__ctas {
+        margin-bottom: 2rem;
+    }
+    
+    /* Hero benefits - reduce padding and gaps */
+    .hero__benefits {
+        gap: 0.75rem;
+    }
+    
+    .hero__benefit {
+        padding: 0.75rem;
+        gap: 0.625rem;
+    }
+    
+    .hero__benefit-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .hero__benefit-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .hero__benefit-title {
+        font-size: 0.75rem;
+    }
+    
+    .hero__benefit-text {
+        font-size: 0.625rem;
+    }
+    
+    /* CREDIBILITY - Mobile */
+    .credibility__grid {
+        gap: 2rem;
+    }
+    
+    .credibility__title {
+        font-size: clamp(1.25rem, 4vw, 1.5rem);
+        margin-bottom: 1rem;
+    }
+    
+    .credibility__text {
+        font-size: 0.9375rem;
+        line-height: 1.7;
+    }
+    
+    .credibility__stats {
+        gap: 0.75rem;
+    }
+    
+    .credibility__stat {
+        padding: 1.25rem 0.75rem;
+    }
+    
+    .credibility__stat-number {
+        font-size: 1.5rem;
+    }
+    
+    /* SERVICES - Mobile */
+    .services__grid {
+        gap: 1rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .service-card__icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 1rem;
+    }
+    
+    .service-card__icon svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .service-card__title {
+        font-size: 1rem;
+    }
+    
+    .service-card__description {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+    }
+    
+    .service-card__list {
+        margin-bottom: 1rem;
+    }
+    
+    .service-card__list li {
+        font-size: 0.8125rem;
+        margin-bottom: 0.375rem;
+    }
+    
+    /* SOLVE - Mobile */
+    .solve__header {
+        margin-bottom: 2.5rem;
+    }
+    
+    .solve__title {
+        font-size: clamp(1.25rem, 4vw, 1.5rem);
+        margin-bottom: 0.75rem;
+    }
+    
+    .solve__subtitle {
+        font-size: 0.9375rem;
+    }
+    
+    .solve__card {
+        padding: 1.5rem;
+    }
+    
+    .solve__card-number {
+        margin-bottom: 0.75rem;
+    }
+    
+    .solve__card-title {
+        font-size: 0.9375rem;
+    }
+    
+    .solve__card-text {
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
+    
+    .solve__card-cta-content {
+        padding: 0.5rem 0;
+    }
+    
+    .solve__card-cta-title {
+        font-size: 1rem;
+    }
+    
+    .solve__card-cta-text {
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    /* PROJECTS - Mobile */
+    .projects__showcase {
+        gap: 1.5rem;
+    }
+    
+    .project-featured {
+        gap: 1.5rem;
+    }
+    
+    .project-featured__visual {
+        padding: 1.5rem;
+    }
+    
+    .project-featured__info {
+        padding: 1.5rem;
+    }
+    
+    .project-featured__title {
+        font-size: 1.25rem;
+    }
+    
+    .project-featured__description {
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .project-featured__results {
+        gap: 1.5rem;
+    }
+    
+    .project-featured__result-value {
+        font-size: 1.25rem;
+    }
+    
+    .projects__grid {
+        gap: 1rem;
+    }
+    
+    .project-card__info {
+        padding: 1.25rem;
+    }
+    
+    .project-card__title {
+        font-size: 0.9375rem;
+    }
+    
+    .project-card__description {
+        font-size: 0.8125rem;
+    }
+    
+    .projects__cta {
+        margin-top: 3rem;
+        padding-top: 3rem;
+    }
+    
+    /* PROCESS - Mobile */
+    .process__header {
+        margin-bottom: 2.5rem;
+    }
+    
+    .process__title {
+        font-size: clamp(1.25rem, 4vw, 1.5rem);
+        margin-bottom: 0.75rem;
+    }
+    
+    .process__subtitle {
+        font-size: 0.9375rem;
+    }
+    
+    .process__steps {
+        gap: 0.75rem;
+    }
+    
+    .process__step {
+        padding: 1.25rem;
+    }
+    
+    .process__step-number {
+        margin-bottom: 0.75rem;
+    }
+    
+    .process__step-title {
+        font-size: 0.9375rem;
+    }
+    
+    .process__step-text {
+        font-size: 0.8125rem;
+        line-height: 1.6;
+    }
+    
+    /* DIFFERENTIALS - Mobile */
+    .differentials__grid {
+        gap: 1rem;
+    }
+    
+    .differential-card {
+        padding: 1.5rem;
+    }
+    
+    .differential-card__icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 1rem;
+    }
+    
+    .differential-card__icon svg {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .differential-card__title {
+        font-size: 0.9375rem;
+    }
+    
+    .differential-card__text {
+        font-size: 0.875rem;
+    }
+    
+    /* CLIENTS - Mobile */
+    .clients__header {
+        margin-bottom: 2.5rem;
+    }
+    
+    .clients__title {
+        font-size: clamp(1.25rem, 4vw, 1.5rem);
+        margin-bottom: 0.75rem;
+    }
+    
+    .clients__subtitle {
+        font-size: 0.9375rem;
+    }
+    
+    .clients__grid {
+        gap: 0.75rem;
+    }
+    
+    .client-card {
+        padding: 1.5rem;
+    }
+    
+    .client-card__icon {
+        margin-bottom: 1rem;
+    }
+    
+    .client-card__icon svg {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .client-card__title {
+        font-size: 0.875rem;
+    }
+    
+    .client-card__text {
+        font-size: 0.8125rem;
+        line-height: 1.6;
+    }
+    
+    /* TESTIMONIALS - Mobile */
+    .testimonials__grid {
+        gap: 1rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-card__stars {
+        margin-bottom: 1rem;
+    }
+    
+    .testimonial-card__text {
+        font-size: 0.875rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+    
+    .testimonial-card__author {
+        font-size: 0.875rem;
+    }
+    
+    .testimonial-card__company {
+        font-size: 0.75rem;
+    }
+    
+    /* FAQ - Mobile */
+    .faq__header {
+        margin-bottom: 2.5rem;
+    }
+    
+    .faq__title {
+        font-size: clamp(1.25rem, 4vw, 1.5rem);
+    }
+    
+    .faq__question {
+        padding: 1.25rem;
+        font-size: 0.875rem;
+    }
+    
+    .faq__answer {
+        padding: 0 1.25rem 1.25rem;
+    }
+    
+    .faq__answer p {
+        font-size: 0.875rem;
+    }
+    
+    /* CTA FINAL - Mobile */
+    .cta-final {
+        padding: 4rem 0;
+    }
+    
+    .cta-final::before {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .cta-final__title {
+        font-size: clamp(1.25rem, 5vw, 1.75rem);
+        margin-bottom: 0.75rem;
+    }
+    
+    .cta-final__text {
+        font-size: 0.9375rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .cta-final__ctas {
+        margin-bottom: 1.25rem;
+    }
+    
+    /* FOOTER - Mobile */
+    .footer {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .footer__top {
+        gap: 2rem;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .footer__social {
+        justify-content: center;
+    }
+    
+    .footer__bottom {
+        gap: 0.75rem;
+    }
+}
+
+/* ========================================
+   EXTRA SMALL MOBILE (max-width: 480px)
+   Further compact adjustments
+   ======================================== */
+
+@media (max-width: 480px) {
+    /* Sections - even tighter */
+    .credibility,
+    .services,
+    .solve,
+    .projects,
+    .process,
+    .differentials,
+    .clients,
+    .testimonials,
+    .faq,
+    .cta-final {
+        padding: 3rem 0;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    /* Hero - single column stack */
+    .hero__title {
+        font-size: clamp(1.5rem, 8vw, 1.75rem);
+    }
+    
+    .hero__subtitle {
+        font-size: 0.875rem;
+    }
+    
+    /* Hero benefits - single column on very small screens */
+    .hero__benefits {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .hero__benefit {
+        flex-direction: row;
+        align-items: center;
+        padding: 0.625rem;
+    }
+    
+    .hero__benefit-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .hero__benefit-text {
+        display: none; /* Hide secondary text on very small screens */
+    }
+    
+    /* Credibility stats - smaller */
+    .credibility__stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .credibility__stat {
+        padding: 1rem 0.5rem;
+    }
+    
+    .credibility__stat-number {
+        font-size: 1.25rem;
+    }
+    
+    .credibility__stat-label {
+        font-size: 0.5625rem;
+    }
+    
+    /* Service cards - tighter */
+    .service-card {
+        padding: 1.25rem;
+    }
+    
+    .service-card__icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.75rem;
+    }
+    
+    .service-card__list {
+        display: none; /* Hide list items on very small screens, show description only */
+    }
+    
+    .service-card__description {
+        margin-bottom: 0;
+    }
+    
+    /* Solve cards - tighter */
+    .solve__card {
+        padding: 1.25rem;
+    }
+    
+    /* Process - 2 columns instead of 1 on small tablets */
+    .process__steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    /* Clients - 1 column on small screens */
+    .clients__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Project results - stack on mobile */
+    .project-featured__results {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
