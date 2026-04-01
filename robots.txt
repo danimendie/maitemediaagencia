@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://danimendie.github.io/maitemediaagencia/sitemap.xml
