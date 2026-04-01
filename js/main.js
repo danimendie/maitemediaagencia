@@ -32,6 +32,7 @@
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const nav = document.getElementById('nav');
+        const body = document.body;
 
         if (!menuBtn || !mobileMenu) return;
 
@@ -41,9 +42,12 @@
             mobileMenu.classList.toggle('active');
             menuBtn.classList.toggle('active');
             
+            // Lock/unlock body scroll
             if (!isOpen) {
+                body.style.overflow = 'hidden';
                 nav.classList.add('open');
             } else {
+                body.style.overflow = '';
                 nav.classList.remove('open');
             }
         });
@@ -52,6 +56,7 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
                 menuBtn.classList.remove('active');
+                body.style.overflow = '';
                 nav.classList.remove('open');
             });
         });
